@@ -94,6 +94,8 @@
             });
      
             
+
+
              
     
     function  register(){
@@ -103,15 +105,38 @@
 
         if(! (inputuserleng<5)  && ! (inputpasslengh<8) ){
 
-       //     if (usernameInput.value.trim() !== '' && passwordInput.value.trim() !== '')
-            console.log("Okkkk");
+            const myconfirm=document.getElementById("myconfirm");
+            const myform=document.querySelector(".myform");
+            const myuser=document.getElementById("myuser");
+            const email1=document.getElementById("email1");
+            const password1=document.getElementById("password1");
+            myform.style.display="none";
+
+            myconfirm.style.visibility="visible";
+            myuser.innerText=userInput.value;
+            email1.textContent=inputEmail.value;
+            password1.textContent=passwordInput.value;
+            
+            console.log(myuser);
+
+
+            
+
+            
+
+            console.log(userInput.value);
+
 
 
         }
 
         else
         {
-            console.log("not good ");
+            myform.style.display="none";
+
+            myconfirm.style.display="inline";
+            document.write("form is empty");
+            
         }
     }
 

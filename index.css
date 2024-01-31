@@ -59,3 +59,16 @@ body {
     background-color: #5aa65e;
     display: none;
   }
+
+  .input1 {
+    width: 100%;
+    background-color: #10d791;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    visibility:hidden;
+    
+  }
+
+ 
